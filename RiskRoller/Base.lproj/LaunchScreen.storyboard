@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jcn-6H-dwC">
+                                <rect key="frame" x="2" y="0.0" width="598" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="SiZ-O0-ICs"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VKb-eV-Vp8">
+                                <rect key="frame" x="0.0" y="560" width="600" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ika-1G-AhX">
+                                        <rect key="frame" x="285" y="5" width="30" height="30"/>
+                                        <state key="normal" title="Roll"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="nFh-cd-hkI"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PsR-Gv-vSF">
+                                <rect key="frame" x="20" y="40" width="560" height="520"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Attacking Force" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AK8-7L-kaz">
+                                        <rect key="frame" x="68" y="78" width="121" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZYn-F7-ht9">
+                                        <rect key="frame" x="98" y="116" width="50" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PsR-Gv-vSF" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="0FO-d2-jaT"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="VKb-eV-Vp8" secondAttribute="bottom" id="96U-Km-T8y"/>
+                            <constraint firstItem="Jcn-6H-dwC" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="FHZ-QD-gNp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PsR-Gv-vSF" secondAttribute="trailing" id="Fqn-sU-kSh"/>
+                            <constraint firstItem="VKb-eV-Vp8" firstAttribute="top" secondItem="PsR-Gv-vSF" secondAttribute="bottom" id="GEc-z2-7Sg"/>
+                            <constraint firstItem="VKb-eV-Vp8" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="GXX-rp-fSI"/>
+                            <constraint firstAttribute="trailing" secondItem="VKb-eV-Vp8" secondAttribute="trailing" id="K6G-vz-ASy"/>
+                            <constraint firstItem="PsR-Gv-vSF" firstAttribute="top" secondItem="Jcn-6H-dwC" secondAttribute="bottom" id="Tef-ua-ENG"/>
+                            <constraint firstItem="Jcn-6H-dwC" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="2" id="rzN-ph-ohO"/>
+                            <constraint firstAttribute="trailing" secondItem="Jcn-6H-dwC" secondAttribute="trailing" id="wya-g2-pz4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+</document>
